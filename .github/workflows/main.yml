@@ -34,7 +34,7 @@ jobs:
       - name: Build Kernel
         run: |
           chmod +x ./build.sh
-          ./build.sh -m r8s -k y
+          ./build.sh -m y2slte -k y
 
       - name: Find built zips
         id: find_zips
@@ -52,4 +52,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: built-kernels
-          path: ${{ env.ZIP_FILES }}
+          path: test.zip
