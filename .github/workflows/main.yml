@@ -24,7 +24,7 @@ jobs:
       - name: Checkout specific commit
         uses: actions/checkout@v4
         with:
-          ref: 266555b07ad5f4757c22913f960b4f5e4e5297bc
+          ref: 098a81dfa77c5c73d4dbfe92257ce841426c45c4
           submodules: recursive
 
 
