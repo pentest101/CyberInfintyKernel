@@ -21,10 +21,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout specific commit
         uses: actions/checkout@v4
         with:
+          ref: 266555b07ad5f4757c22913f960b4f5e4e5297bc
           submodules: recursive
+
 
       - name: Set up environment
         run: |
